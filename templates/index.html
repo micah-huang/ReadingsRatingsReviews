@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <h1>Search for a book!</h1>
+    <form action="/search" method="GET">
+        <div class="form-group">
+            <input type="text" class="form-control" name="book" autofocus aria-describedby="bookHelp" placeholder="Please search for the book's ISBN, title, or author">
+            <small id="bookHelp" class="form-text text-muted">Example ISBN: 0590396560, Example Title: The Lion's Game, Example Author: Janet Evanovich</small>
+        </div>
+        <div>
+        	<button class="btn btn-primary" type="submit">Search</button>
+    </form>
+{% endblock %}
