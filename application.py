@@ -14,8 +14,6 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 app = Flask(__name__)
 
-# key: HLZgtz8TZRiqMP9vHKEw
-# postgres://yfvsepemigiqjn:5aa8dcb42e78b05559d996dc921d6607042bff43f8f65b3ba680127b8476551a@ec2-34-234-228-127.compute-1.amazonaws.com:5432/d15o8af8uk4rnd
 
 # Check for environment variable
 if not os.getenv("DATABASE_URL"):
